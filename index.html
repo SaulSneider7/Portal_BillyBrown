@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo NOVADIS - Billy Brown</title>
+    <link rel="shortcut icon" href="logo_mono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            /* ajusta tamaño */
+            height: 280px;
+            border-radius: 50%;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('logo_mono.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+            opacity: 1;
+            /* filter: blur(2px);  */
+        }
+
+
+        .content {
+            z-index: 1;
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-letras {
+            width: 380px;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .username {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .location {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        .location i {
+            margin-right: 6px;
+            color: #e2ff3d;
+        }
+
+        .slogan {
+            font-style: italic;
+            font-size: 1rem;
+            margin-top: 6px;
+            color: #000;
+        }
+
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 20px 0 10px;
+            text-align: center;
+        }
+
+        .link-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .link {
+            text-decoration: none;
+            background-color: #f9f9f9;
+            border: 2px solid #e2ff3d;
+            padding: 14px 20px;
+            text-align: center;
+            color: #000;
+            font-weight: bold;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .link:active {
+            background-color: #e2ff3d;
+            transform: scale(0.97);
+        }
+
+        .link i {
+            font-size: 1.2rem;
+        }
+
+        .link:hover {
+            background-color: #e2ff3d;
+            transform: scale(1.03);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .link {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .logo-letras {
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Logo en letras arriba -->
+        <img src="logo_letras.png" alt="Logo NOVADIS Letras" class="logo-letras" />
+
+        <!-- Información personalizada -->
+        <div class="info-box">
+            <p class="username">@BillyBrown.pe</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Lima, Perú 🇵🇪</p>
+            <p class="slogan">“Dale vida a cada paso 🧦🌈”</p>
+        </div>
+
+        <div class="link-container">
+            <a href="https://www.instagram.com/" class="link" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/51967395991" class="link" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="tel:+51967395991" class="link">
+                <i class="fas fa-phone"></i> Llámanos
+            </a>
+            <a href="#noticias" class="link">
+                <i class="fas fa-newspaper"></i> Noticias
+            </a>
+            <a href="#catalogo" class="link">
+                <i class="fas fa-book-open"></i> Catálogo
+            </a>
+            <a href="https://billybrown.shop/collections" class="link" target="_blank">
+                <i class="fas fa-globe"></i> Billy Brown - España
+            </a>
+        </div>
+
+        <footer>
+            © 2025 Grupo NOVADIS
+        </footer>
+    </div>
+</body>
+
+</html>
