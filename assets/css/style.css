@@ -97,7 +97,7 @@ h1 {
     text-decoration: none;
     background-color: #e2ff3d;
     border: 2px solid #e2ff3d;
-    padding: 8px 20px;
+    padding: 14px 20px;
     text-align: center;
     color: #000 !important;
     font-weight: bold;
@@ -183,7 +183,7 @@ footer {
 }
 
 .tiendas h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #e2ff3d;
     margin-bottom: 15px;
 }
@@ -229,7 +229,7 @@ footer {
 
 @media (max-width: 480px) {
     .link {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .logo-letras {
