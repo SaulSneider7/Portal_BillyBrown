@@ -97,7 +97,7 @@ h1 {
     text-decoration: none;
     background-color: #e2ff3d;
     border: 2px solid #e2ff3d;
-    padding: 14px 20px;
+    padding: 8px 20px;
     text-align: center;
     color: #000 !important;
     font-weight: bold;
@@ -146,24 +146,6 @@ footer {
         box-shadow: 0 0 2px rgba(226, 255, 61, 0.3), 0 0 2px rgba(226, 255, 61, 0.1);
     }
 }
-
-
-
-
-@media (max-width: 480px) {
-    .link {
-        font-size: 1rem;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    .logo-letras {
-        width: 250px;
-    }
-}
-
 
 
 .social-contact {
@@ -242,5 +224,23 @@ footer {
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        font-size: 0.6rem;
+    }
+
+    .logo-letras {
+        width: 250px;
+    }
+
+    .social-contact {
+        margin-top: 10px;
+    }
+
+    .tiendas {
+        margin: 20px 0 10px;
     }
 }
