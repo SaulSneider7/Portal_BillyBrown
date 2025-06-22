@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(rgba(54, 54, 54, 0.4), rgba(0, 0, 0, 0.4));
+    /* background: linear-gradient(rgba(54, 54, 54, 0.4), rgba(0, 0, 0, 0.4)); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,22 +14,18 @@ body {
 body::before {
     content: '';
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 280px;
-    /* ajusta tamaño */
-    height: 280px;
-    border-radius: 50%;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../img/logo_mono.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url('../img/logo_mono.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
-    opacity: 1;
-    /* filter: blur(2px);  */
+    opacity: 0.30;
+    /* más sutil */
+    /* filter: blur(2px); */
 }
 
 
@@ -69,7 +65,7 @@ body::before {
 
 .location i {
     margin-right: 6px;
-    color: #e2ff3d;
+    /* color: #e2ff3d; */
 }
 
 .slogan {
@@ -155,7 +151,7 @@ footer {
 
 .social-contact h2 {
     margin-bottom: 10px;
-    color: #e2ff3d;
+    /* color: #e2ff3d; */
     font-size: 1.2rem;
 }
 
@@ -184,7 +180,7 @@ footer {
 
 .tiendas h3 {
     font-size: 1.2rem;
-    color: #e2ff3d;
+    /* color: #e2ff3d; */
     margin-bottom: 15px;
 }
 
