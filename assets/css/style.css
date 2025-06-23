@@ -38,6 +38,12 @@ body::before {
     align-items: center;
 }
 
+.logo {
+    width: 180px;
+    max-width: 400px;
+    margin: -30px auto -40px;
+}
+
 .logo-letras {
     width: 380px;
     margin-top: 20px;
@@ -45,7 +51,7 @@ body::before {
 
 .info-box {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -87,6 +93,38 @@ h1 {
     flex-direction: column;
     gap: 16px;
     margin-top: 20px;
+}
+
+.link-container a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* fondo translúcido */
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    /* borde tenue */
+    padding: 14px 20px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    backdrop-filter: blur(6px);
+    /* desenfoque elegante */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    /* sombra sutil */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.link-container a:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.link-container a i {
+    font-size: 1.2rem;
 }
 
 .link {
