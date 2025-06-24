@@ -261,6 +261,44 @@ footer {
     }
 }
 
+.certificaciones {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.certificaciones h3 {
+    font-size: 1.2rem;
+    /* color: #e2ff3d; */
+    margin-bottom: 20px;
+}
+
+.swiper-certificaciones {
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.1);
+}
+
 @media (max-width: 480px) {
     .link {
         font-size: 0.8rem;
