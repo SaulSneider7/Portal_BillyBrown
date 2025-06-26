@@ -260,7 +260,6 @@ footer {
         opacity: 1;
     }
 }
-
 .certificaciones {
     text-align: center;
     margin-top: 40px;
@@ -273,7 +272,6 @@ footer {
 }
 
 .certificaciones-logos {
-    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,25 +279,20 @@ footer {
     flex-wrap: wrap;
 }
 
-.certificaciones-logos a {
+.certificaciones-logos img {
     width: 100px;
     height: 100px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
     transition: transform 0.2s ease;
     animation: zoomIn 1s ease infinite alternate;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: contain;
+    display: block;
 }
 
-.certificaciones-logos img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    border-radius: 0;
-    display: block;
+/* Elimina estilos innecesarios para enlaces */
+.certificaciones-logos a {
+    display: none;
 }
 
 .certificaciones-descripcion {
@@ -337,5 +330,10 @@ footer {
 
     .tiendas {
         margin: 20px 0 10px;
+    }
+
+    .certificaciones-logos img {
+        width: 150px;
+        height: 100px;
     }
 }
